@@ -16,10 +16,15 @@
 <body>
 <div class="container-fluid">
   {% include header.html %}
-  <div class="post">
-    <h1>{{ page.title }}</h1>
-    <div class="entry">
-      {{ content }}
+  <div class="row">
+    {% include sidebar.html %}
+    <div class="col-md-8" id="content">
+      <div class="post">
+        <h1>{{ page.title }}</h1>
+        <div class="entry">
+          {{ content }}
+        </div>
+      </div>
     </div>
   </div>
   {% include footer.html %}

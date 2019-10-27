@@ -1,0 +1,12 @@
+<div class="sidebar col-md-4 hidden-sm hidden-xs">
+<ul>
+  <li class="sidepictures">
+    {% if page.sidebar %}
+    {% include sidebars/{{ page.sidebar }}.html %}
+    {% else %}
+    {% include sidebars/home.html %}
+    {% endif %}
+  </li>
+</ul>
+</div>
+
