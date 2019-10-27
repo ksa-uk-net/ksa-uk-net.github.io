@@ -1,0 +1,314 @@
+/*  
+Theme Name: Karen
+Theme URI: http://www.ksa.uk.net
+Description: KSA Ltd Theme
+Author: Will Shackleton
+Author URI: http://www.ksa.uk.net
+Version: 1.0
+Tags:
+.
+Theme
+.
+*/
+
+body {
+    font-family: 'Mako', sans-serif;
+    font-size: 16px;
+}
+
+#header
+{
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: #3B69F5;
+	color: #FFFFFF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Molengo', sans-serif;
+}
+
+@media (min-width: 992px) {
+    #header {
+        background-image: url('ksalogo.png');
+    }
+}
+
+#header a:link, 
+#header a:active,
+#header a:visited,
+#header a:hover
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+#linkbar
+{
+	font-family: 'Trebuchet MS', Verdana, Tahoma, Arial, sans-serif;
+	background-color: #DADADA;
+	border-bottom: 1px white solid;
+}
+
+#linkbar ul
+{
+	list-style: none;
+}
+
+#linkbar ul li
+{
+	min-width: 7em;
+	float: left;
+	background-color: #DADADA;
+}
+
+#linkbar > ul > li
+{
+	margin: 5px;
+}
+
+#linkbar ul li:hover
+{
+	background-color: #FFFFFF;
+}
+
+#linkbar a
+{
+	display: block;
+	min-height: 20px;
+	padding: 2px 3px 2px 5px;
+	text-decoration: none;
+	color: #3B69F5;
+}
+
+#linkbar a:hover
+{
+	color: #1040B0;
+}
+
+#linkbar li
+{
+	position: relative;
+}
+
+#linkbar li.current_page_item
+{
+	font-weight: bold;
+}
+
+#linkbar ul ul
+{
+	position: absolute;
+	z-index: 500;
+    padding: 0;
+
+	font-size: 0.9em;
+}
+
+#linkbar ul ul ul
+{
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+#linkbar ul ul li
+{
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	background-color: #D0D0D0;
+}
+
+#linkbar ul ul li.current_page_item
+{
+	font-weight: bold;
+}
+
+#linkbar ul ul li a
+{
+}
+
+#linkbar ul ul,
+#linkbar ul li:hover ul ul,
+#linkbar ul ul li:hover ul ul
+{
+	display: none;
+}
+
+#linkbar ul li:hover ul,
+#linkbar ul ul li:hover ul,
+#linkbar ul ul ul li:hover ul
+{
+	display: block;
+}
+
+
+.sidebar
+{
+	background-color: #F3F6FB;
+	font-size: 0.8em;
+}
+
+.sidebar ul
+{
+	list-style-type: none;
+}
+
+
+input[type=text],
+input[type=password],
+.wpcf7 input[type=text],
+.sidebar textarea,
+.wpcf7 textarea
+{
+	border: 1px black solid;
+	padding: 1px;
+	font-family: 'Trebuchet MS', Verdana, Tahoma, Arial, sans-serif;
+}
+
+input[type=submit],
+.wpcf7 input[type=submit]
+{
+	background-color: #1040B0;
+	padding: 1px;
+	border: 1px black solid;
+	color: #FFFFFF;
+	font-family: 'Trebuchet MS', Verdana, Tahoma, Arial, sans-serif;
+}
+
+.sidebar input[type=submit],
+.wpcf7 input[type=submit]
+{
+	background-color: #1040B0;
+	padding: 1px;
+	border: 1px black solid;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.sidebar input[type=submit]:hover
+{
+	border: 1px #3B69F5 solid;
+}
+
+.sidebar h2
+{
+	color: #1040B0;
+	padding: 0 0 10px 5px;
+	font-size: 1.2em;
+}
+
+.sidebar > ul > li
+{
+	padding: 0 0 10px 0;
+}
+
+.sidepictures
+{
+	margin: 10px;
+	text-align: center;
+}
+
+.sidepictures img
+{
+    max-width: 370px;
+    width: 100%;
+}
+
+.sidepictures h1
+{
+	font-size: 1.2em;
+	text-align: center;
+	color: #1040B0;
+	margin-top: 10px;
+}
+
+.sidepictures p
+{
+	text-align: center;
+	color: #808080;
+}
+
+.sidepictures a,
+.sidepictures a:link,
+.sidepictures a:visited,
+.sidepictures a:hover,
+.sidepictures a:active
+{
+	color: #808080;
+	font-style: italic;
+}
+
+
+#footer
+{
+	min-height: 80px;
+	background-color: #3B69F5;
+	background-image: url('ksalogobottom.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
+#footer-left,
+#footer-right {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#site-info
+{
+	margin: 5px;
+}
+
+#footer p
+{
+	margin: 0 0 0 10px;
+	font-size: 0.9em;
+}
+
+#footer a
+{
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+#footer a:visited
+{
+	color: #FFFFFF;
+}
+
+#footer a:active
+{
+	color: #FFFFFF;
+}
+
+#footer a:hover
+{
+	text-decoration: none;
+}
+
+
+@media print {
+*
+{
+	background:white; color:black; margin:0
+}
+
+#header .innercontent
+{
+	width: 100%;
+	margin: 0 0 0 0;
+	min-height: 100px;
+}
+
+#linkbar,
+.sidebar
+{
+	display: none;
+}
+
+}

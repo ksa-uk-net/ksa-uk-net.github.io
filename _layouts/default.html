@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% if page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Molengo|Mako' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/style.css" type="text/css" media="screen, print" />
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  {% include header.html %}
+  <div class="post">
+    <h1>{{ page.title }}</h1>
+    <div class="entry">
+      {{ content }}
+    </div>
+  </div>
+  {% include footer.html %}
+</div>
+</body>
+</html>
